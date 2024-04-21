@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart';
+import 'package:weather/res/app_url/app_url.dart';
 
 class Utils {
 
@@ -9,6 +10,13 @@ class Utils {
     'Clear' : 'assets/images/wind.png',
     null : 'assets/images/nightStatRain.png'
   };
+
+  //generate Url
+  static String generateWeatherURL(city) {
+    final formattedCity = city.replaceAll(' ', '%20');
+    final url = AppUrl.url.replaceAll('{city}', formattedCity);
+    return url;
+  }
 
   // formate date
   static String formateDate(DateTime date){

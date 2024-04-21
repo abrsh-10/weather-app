@@ -28,6 +28,7 @@ class CenterCard extends StatelessWidget {
               width: size.width,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
+                  border: Border.all(color: Colors.white,width: 3),
                   gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,

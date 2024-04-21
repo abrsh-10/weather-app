@@ -17,7 +17,12 @@ class CustomAppBar extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: const Icon(Icons.arrow_back_ios_new_rounded,color: Colors.blue,size: 20,),
+            child: GestureDetector(
+              onTap: (){
+                Navigator.pop(context);
+              },
+                child: const Icon(Icons.arrow_back_ios_new_rounded,color: Colors.blue,size: 20,)
+            ),
           ),
           const Text('Next 14 Days',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 20),),
           const SizedBox(),

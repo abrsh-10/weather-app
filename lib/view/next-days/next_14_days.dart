@@ -27,7 +27,7 @@ class NextDays extends StatelessWidget {
               Positioned(
                 top: 1,
                 child: Container(
-                  height: size.height / 1.8,
+                  height: size.height,
                   width: size.width,
                   decoration: const BoxDecoration(
                       gradient: LinearGradient(
@@ -53,19 +53,6 @@ class NextDays extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
-                bottom: 1,
-                child: Container(
-                  height: size.height / 1.9,
-                  width: size.width,
-                  decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(50),
-                          topRight: Radius.circular(50))),
-                ),
-              ),
-              BottomList(),
               Hero(
                 tag: 'TAG',
                 child: Material(color: Colors.transparent, child: CenterCard()),

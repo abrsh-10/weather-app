@@ -5,25 +5,10 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Padding(
-          padding: EdgeInsets.all(8),
-          child: Icon(
-            Icons.menu,
-            color: Colors.grey,
-          ),
-        ),
-        const SizedBox(
-          width: 10,
-        ),
-        Padding(
-          padding: EdgeInsets.all(8),
-          child: Icon(
-            Icons.notifications_none,
-            color: Colors.grey,
-          ),
-        ),
-        const Spacer(),
+       SizedBox(width: 10,),
+        Text("Ethio Weather App",style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 26),),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Image.asset(

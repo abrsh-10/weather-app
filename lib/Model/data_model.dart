@@ -430,12 +430,12 @@ class CurrentConditions {
   dynamic feelslike;
   dynamic humidity;
   dynamic dew;
-  Null? precip;
+  dynamic precip;
   dynamic precipprob;
   dynamic snow;
   dynamic snowdepth;
-  Null? preciptype;
-  Null? windgust;
+  dynamic preciptype;
+  dynamic windgust;
   dynamic windspeed;
   dynamic winddir;
   dynamic pressure;
@@ -492,7 +492,7 @@ class CurrentConditions {
     feelslike = json['feelslike'];
     humidity = json['humidity'];
     dew = json['dew'];
-    precip = json['precip'];
+    precip = json['precip']??0;
     precipprob = json['precipprob'];
     snow = json['snow'];
     snowdepth = json['snowdepth'];
